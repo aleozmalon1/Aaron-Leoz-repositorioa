@@ -21,7 +21,7 @@
             
         }
         button{
-            border: 0px;
+            border: 1px;
             background-color:grey ;
             color: white; 
             font-size: large;
@@ -30,17 +30,48 @@
             padding-right: 0.75cm;
             padding-left: 0.75cm;
         }
+
+        ul {
+        display: inline;
+        border: 1px;
+            background-color:grey ;
+            color: white; 
+            font-size: large;
+            padding-bottom: 10px;
+            padding-top: 10px;
+            padding-right: 0.75cm;
+            padding-left: 0.75cm;
+      }
+      ul li {display: inline-block;}
+      ul li:hover {background: #555;}
+      ul li:hover ul {display: block;}
+      ul li ul {
+        display: none;
+      }
+      ul li ul li {
+        background: #555;
+        display: block;
+      }
+      ul li ul li a {display:block !important;}
+      ul li ul li:hover {background: #666;}
     </style>
     
 </head>
 <body>
     <div class="goiburua">
-        <button type="dropdown">Pertsonalizatzailea</button> 
+        <a href="#">pertsonalizatzea</a>
+        <ul>
+            <li><a href="#"> sisas </a></li>
+            <li><a href="#"> no sas</a></li>
+        </ul>
         <button type="button">Formularioa</button> 
         <button type="button">Irudiak</button>
     </div>
+
+
     <h1>Ongi etorri Pertsonalizatzailera!!</h1>
     <p>Paragrafo honen estiloa alda dezakezu</p>
     <p>Klik egin pertsonalizatzeko</p>
+
 </body>
 </html>
