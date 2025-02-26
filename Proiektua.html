@@ -13,9 +13,6 @@
         .zentro{
             text-align: center;
         }
-        .goiburua{
-
-        }
 
         .dropdown {
             position: relative;
@@ -24,7 +21,7 @@
 
         .dropdown-content {
          display: none;
-        position: absolute;
+         position: absolute;
          background-color: #f9f9f9;
         min-width: 160px;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -32,7 +29,6 @@
         z-index: 1;
         }
         div{
-            display: inline;
             border: 1px;
             background-color:grey ;
             color: white; 
@@ -41,13 +37,18 @@
             padding-top: 10px;
             padding-right: 0.75cm;
             padding-left: 0.75cm;
-
-
-                        
-            border: 0px solid #000;
-            width: 100%;
-            background-color: grey;
+            width: auto;
         }
+
+        div.mycontainer {
+        width:100%;
+        overflow:auto;
+        }
+        div.mycontainer div {
+        width:33%;  
+        float:left;
+        }
+
 .dropdown:hover .dropdown-content {
   display: block;
         }
@@ -79,7 +80,10 @@
     
 </head>
 <body>
-    <div class="dropdown">
+    <div class="mycontainer">
+    
+    <div>
+    <h2 class="dropdown">
         <span>pertsonalizatzea</span>
         <div class="dropdown-content">
             <p>
@@ -87,10 +91,18 @@
                 <li><a href="#"> no sas</a></li>
             </p>
         </div>
-        <a href="url">Formularioa</a>
-        <a href="url">Irudiak</a>
     </div>
 
+
+<div>
+    <a href="url"><h2>Formularioa</h2></a>
+</div>
+
+<div>
+    <a href="url"><h2>Irudiak</h2></a> 
+</div>
+    </div>
+    
     <h1>Ongi etorri Pertsonalizatzailera!!</h1>
     <p>Paragrafo honen estiloa alda dezakezu</p>
     <p>Klik egin pertsonalizatzeko</p>
