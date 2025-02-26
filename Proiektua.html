@@ -14,13 +14,25 @@
             text-align: center;
         }
         .goiburua{
-            
-            border: 0px solid #000;
-            width: 100%;
-            background-color: grey;
-            
+
         }
-        button{
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+         display: none;
+        position: absolute;
+         background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 12px 16px;
+        z-index: 1;
+        }
+        div{
+            display: inline;
             border: 1px;
             background-color:grey ;
             color: white; 
@@ -29,6 +41,15 @@
             padding-top: 10px;
             padding-right: 0.75cm;
             padding-left: 0.75cm;
+
+
+                        
+            border: 0px solid #000;
+            width: 100%;
+            background-color: grey;
+        }
+.dropdown:hover .dropdown-content {
+  display: block;
         }
 
         ul {
@@ -58,16 +79,17 @@
     
 </head>
 <body>
-    <div class="goiburua">
-        <a href="#">pertsonalizatzea</a>
-        <ul>
-            <li><a href="#"> sisas </a></li>
-            <li><a href="#"> no sas</a></li>
-        </ul>
-        <button type="button">Formularioa</button> 
-        <button type="button">Irudiak</button>
+    <div class="dropdown">
+        <span>pertsonalizatzea</span>
+        <div class="dropdown-content">
+            <p>
+                <li><a href="#"> sisas </a></li>
+                <li><a href="#"> no sas</a></li>
+            </p>
+        </div>
+        <a href="url">Formularioa</a>
+        <a href="url">Irudiak</a>
     </div>
-
 
     <h1>Ongi etorri Pertsonalizatzailera!!</h1>
     <p>Paragrafo honen estiloa alda dezakezu</p>
