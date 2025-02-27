@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="formulario.css">
+<style>
+     body {
+            margin: 0px;
+            padding: 0px;
+        }
+        .zentro{
+            text-align: center;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+         display: none;
+         position: absolute;
+         background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 12px 16px;
+        z-index: 1;
+        }
+        div{
+            border: 0px;
+            background-color:grey ;
+            color: white; 
+            font-size: large;
+            width: auto;
+        }
+
+
+        div a{
+            text-decoration: none;
+            color: white;
+        }
+
+        div.mycontainer {
+        width:100%;
+        height: 2cm;
+        overflow:auto;
+        }
+        div.mycontainer div {
+        width:33%;  
+        float:left;
+        }
+
+.dropdown:hover .dropdown-content {
+  display: block;
+        }
+
+        ul {
+        display: inline;
+        border: 1px;
+            background-color:grey ;
+            color: white; 
+            font-size: large;
+      }
+      ul li {display: inline-block;}
+      ul li:hover {background: #555;}
+      ul li:hover ul {display: block;}
+      ul li ul {
+        display: none;
+      }
+      ul li ul li {
+        background: #555;
+        display: block;
+      }
+      ul li ul li a {display:block !important;}
+      ul li ul li:hover {background: #666;}
+
+      .formulario-kutxa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    box-shadow: 0px 2px 4px rgb(0,0,0,1) ;
+    border-radius: 3px;
+    padding: 20px;
+}
+.errenkada{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    margin: 15px;
+}
+
+</style>
+    
+</head>
+<body>
+  
+    <div class="mycontainer">
+    
+        <div>
+        <h2 class="dropdown">
+            <span>Pertsonalizatzea</span>
+            <div class="dropdown-content">
+                <p>
+                    <li><a href="#"> sisas </a></li>
+                    <li><a href="#"> no sas</a></li>
+                </p>
+            </div>
+        </div>
+    
+    <div>
+        <a href="url"><h2>Formularioa</h2></a>
+    </div>
+    
+    <div>
+        <a href="url"><h2>Irudiak</h2></a> 
+    </div>
+        </div>
+
+    <div class=".formulario-kutxa">
+        <form>
+          <div class=".errenkada">
+            <label for="izena"><strong>Izen osoa:</strong></label>
+            <input type="text" id="izena" name="izena" placeholder="Sartu zure izen osoa">
+          </div>
+    
+          <div class=".errenkada">
+            <label for="Emaila"><strong>Emaila:</strong></label>
+            <input type="email" id="posta" name="posta" placeholder="Sartu zure posta elektronikoa">
+            
+          </div>
+    
+          <div class=".errenkada">
+            <label><strong>Generoa:</strong></label>
+            <div>
+              <input type="radio" id="gizonezkoa" name="generoa" value="male">
+              <label for="gizonezkoa"><strong>Gizonezkoa</strong></label>
+    
+              <input type="radio" id="emakumezkoa" name="generoa" value="emakumezkoa">
+              <label for="emakumezkoa"><strong>Emakumezkoa</strong></label>
+    
+              <input type="radio" id="besteak" name="generoa" value="beste bat">
+              <label for="besteak"><strong>Beste bat</strong></label>
+            </div>
+          </div>
+    
+          <div class=".errenkada">
+            <label for="Estatua"><strong>Estatua:</strong></label>
+            <select id="herrialdea" name="herrialdea">
+              <option value="">Aukeratu zure herrialdea</option>
+              
+              <option value="Euskal Herria">Euskal Herria</option>
+              <option value="uk">Erresuma Batuak</option>
+              <option value="Frantzia">Frantzia</option>
+              <option value="australia">Australia</option>
+            </select>
+          </div>
+    
+          <div class=".errenkada">
+            <button type="submit" class="submit-btn">Bidali</button>
+          </div>
+        </form>
+    </div>
+</body>
+</html>
